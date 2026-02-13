@@ -168,7 +168,7 @@
         <div id="questionSection">
             <h1>Will you let me stick around and irritate you forever? </h1>
             <div class="buttons-container">
-                <button id="yesBtn" onclick="handleYes()">Yes! 💖</button>
+                <button id="yesBtn" onclick="handleYes()">Yes! 💜</button>
                 <button id="noBtn">No</button>
             </div>
         </div>
@@ -181,24 +181,6 @@
     </div>
 
     <script>
-        // Create floating hearts
-        function createHeart() {
-            const heart = document.createElement('div');
-            heart.className = 'heart';
-            heart.innerHTML = '💕';
-            heart.style.left = Math.random() * 100 + 'vw';
-            heart.style.animationDuration = (Math.random() * 3 + 5) + 's';
-            heart.style.animationDelay = Math.random() * 5 + 's';
-            document.body.appendChild(heart);
-
-            setTimeout(() => {
-                heart.remove();
-            }, 8000);
-        }
-
-        // Create hearts periodically
-        setInterval(createHeart, 500);
-
         // Handle Yes button
         function handleYes() {
             document.getElementById('questionSection').style.display = 'none';
